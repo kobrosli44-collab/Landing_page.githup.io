@@ -1,0 +1,310 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fady Al Nahas — Digital Marketing & Branding</title>
+  <meta name="description" content="Fady Al Nahas — Digital Marketing Strategist & Branding Visionary. Smart-casual digital solutions to grow your brand, get leads and scale online. Contact via WhatsApp." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fady Al Nahas — Digital Marketing & Branding" />
+  <meta property="og:description" content="Smart-casual digital solutions to grow your brand. Services: Brand Strategy, Ads, Social Growth, Funnels & Automation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="data:image/svg+xml;charset=UTF-8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='100%25' height='100%25' fill='%23102833'/%3E%3Ctext x='50%25' y='50%25' fill='%23ffffff' font-family='Arial, Helvetica, sans-serif' font-size='40' text-anchor='middle' alignment-baseline='middle'%3EFady%20Al%20Nahas%3C/text%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#062B34" />
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+  :root{
+    --bg:#07111a;
+    --card:#0b1e25;
+    --accent:#1abc9c;    /* turquoise accent */
+    --muted:#9fb7b2;
+    --glass: rgba(255,255,255,0.04);
+    --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(26,188,156,0.06), transparent),
+                linear-gradient(180deg, #07111a 0%, #071e26 100%);
+    color:#e6f2f1;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+  }
+
+  /* Container */
+  .wrap{
+    max-width:1400px;
+    margin:36px auto;
+    padding:28px;
+    display:grid;
+    grid-template-columns: 520px 1fr;
+    gap:28px;
+    align-items:start;
+  }
+
+  /* Card (left) */
+  .card{
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border-radius:var(--radius);
+    padding:34px;
+    box-shadow: 0 12px 40px rgba(3,10,15,0.6);
+    border:1px solid rgba(255,255,255,0.03);
+  }
+  .logo-badge{
+    width:84px;height:84px;border-radius:18px;
+    display:flex;align-items:center;justify-content:center;
+    background: linear-gradient(135deg, rgba(26,188,156,0.16), rgba(16,96,107,0.06));
+    margin-bottom:18px;
+    border:1px solid rgba(255,255,255,0.03);
+  }
+  .logo-badge svg{width:52px;height:52px;display:block}
+
+  h1{
+    margin:0;
+    font-size:24px;
+    letter-spacing:0.2px;
+    font-weight:700;
+    color:#ffffff;
+  }
+  .role{
+    color:var(--muted);
+    margin-top:6px;
+    font-weight:600;
+    font-size:13px;
+  }
+
+  .mini-bio{
+    margin-top:16px;
+    color: #cfeee8;
+    font-size:14px;
+  }
+
+  .services{
+    display:grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap:10px;
+    margin-top:20px;
+  }
+  .service{
+    background:var(--glass);
+    padding:10px 12px;border-radius:12px;
+    font-size:13px;color:#dff5ef;
+    display:flex;gap:10px;align-items:center;
+    border:1px solid rgba(255,255,255,0.02);
+  }
+  .service .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);flex:0 0 10px}
+
+  .cta-row{
+    margin-top:22px;
+    display:flex;gap:12px;align-items:center;
+  }
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    background:linear-gradient(90deg,var(--accent), #12a88a);
+    color:#042022;border:0;padding:12px 18px;border-radius:12px;font-weight:700;
+    text-decoration:none;font-size:14px;box-shadow: 0 10px 30px rgba(26,188,156,0.12);
+  }
+  .btn.ghost{
+    background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);font-weight:600;
+  }
+
+  .contact-card{
+    margin-top:18px;padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));
+    display:flex;flex-direction:column;gap:6px;border:1px solid rgba(255,255,255,0.02)
+  }
+  .contact-row{display:flex;gap:12px;align-items:center}
+  .contact-row svg{width:18px;height:18px;opacity:0.9}
+  .contact-text{font-size:13px;color:#eaf7f3}
+
+  /* Right column (details + mockup) */
+  .panel{
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+    border-radius:var(--radius);
+    padding:28px;
+    min-height:360px;
+    box-shadow: 0 8px 30px rgba(2,10,14,0.6);
+    border:1px solid rgba(255,255,255,0.02);
+  }
+
+  .hero-visual{
+    background:linear-gradient(180deg,#062b33 0%, #0b3b43 100%);
+    border-radius:12px;padding:18px;color:#dff8f3;
+    display:flex;gap:18px;align-items:center;justify-content:space-between;
+  }
+  .visual-left{flex:0 0 60%}
+  .visual-right{flex:0 0 36%;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+
+  .badge{
+    background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:10px;font-weight:700;color:var(--muted);
+  }
+  .mock-card{
+    width:260px;height:150px;border-radius:12px;background:linear-gradient(135deg,#05343a, #0a5b59);
+    display:flex;flex-direction:column;justify-content:center;padding:16px;color:#fff;
+    box-shadow: 0 14px 40px rgba(2,10,12,0.6);
+  }
+  .mock-card h3{margin:0;font-size:18px}
+  .mock-card p{margin:6px 0 0;font-size:12px;color:rgba(255,255,255,0.9)}
+
+  .features{margin-top:18px;display:flex;flex-direction:column;gap:10px}
+  .feature{display:flex;gap:12px;align-items:flex-start}
+  .feature .num{background:rgba(255,255,255,0.04);width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent)}
+  .feature .desc{color:#dff5ef;font-size:14px}
+
+  /* Footer / Contact form */
+  .contact-block{margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  .small-cta{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:10px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600}
+
+  footer{margin-top:24px;color:rgba(255,255,255,0.12);font-size:13px;text-align:center}
+
+  /* Responsive */
+  @media (max-width:1100px){
+    .wrap{grid-template-columns:1fr; padding:20px}
+    .mock-card{width:100%}
+  }
+
+  /* High-DPI tweaks for 4K clarity */
+  @media
+  only screen and (min-resolution: 2dppx),
+  only screen and (min-resolution: 192dpi){
+    .card{padding:42px}
+    .panel{padding:36px}
+    .mock-card{width:340px;height:190px}
+    h1{font-size:28px}
+  }
+  </style>
+</head>
+<body>
+
+  <main class="wrap" role="main">
+    <!-- LEFT: profile card -->
+    <section class="card" aria-labelledby="profile-name">
+      <div class="logo-badge" aria-hidden="true">
+        <!-- simple SVG mark -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="logo">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#1abc9c" />
+              <stop offset="1" stop-color="#12a88a" />
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" rx="14" ry="14" width="84" height="84" fill="url(#g)"/>
+          <text x="50" y="58" font-family="Inter, sans-serif" font-size="36" text-anchor="middle" fill="#042022" font-weight="700">F</text>
+        </svg>
+      </div>
+
+      <h1 id="profile-name">Fady Al Nahas</h1>
+      <div class="role">Digital Marketing Strategist &amp; Branding Expert</div>
+
+      <p class="mini-bio">
+        I help ambitious brands and entrepreneurs stand out, grow fast, and connect deeply with their audience.
+        Using creativity + strategy + smart tech, I turn ideas into growth engines.
+      </p>
+
+      <div class="services" aria-hidden="false">
+        <div class="service"><span class="dot"></span>Brand Strategy & Positioning</div>
+        <div class="service"><span class="dot"></span>Performance Ads & Funnels</div>
+        <div class="service"><span class="dot"></span>Social Growth & Content</div>
+        <div class="service"><span class="dot"></span>Digital Products & Automation</div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn" href="https://wa.me/96871119241" target="_blank" rel="noopener">
+          <!-- WhatsApp SVG -->
+          <svg style="height:18px;width:18px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M20.52 3.48A11.93 11.93 0 0012 0C5.373 0 .001 5.372.001 12c0 2.122.552 4.167 1.6 5.98L0 24l6.28-1.57A11.93 11.93 0 0012 24c6.627 0 12-5.372 12-12 0-1.86-.405-3.62-1.48-5.22z" fill="#042022" />
+            <path d="M17.6 14.1c-.3-.15-1.76-.87-2.03-.97-.27-.1-.46-.15-.65.15-.18.3-.72.97-.88 1.17-.16.2-.32.23-.59.08-1.6-.8-2.64-1.43-3.7-3.25-.28-.48.28-.45.82-1.5.09-.22.04-.4-.02-.55-.06-.15-.65-1.55-.89-2.12-.24-.55-.49-.47-.67-.48-0.18-.01-.4-.01-.62-.01-.22 0-.57.08-.87.4-.3.3-1.15 1.12-1.15 2.73 0 1.62 1.18 3.18 1.35 3.4.18.23 2.33 3.7 5.64 5.04 3.14 1.27 3.14.85 3.7.8.56-.05 1.82-.74 2.07-1.45.25-.71.25-1.32.175-1.45-.08-.13-.28-.2-.58-.35z" fill="#1ABC9C"/>
+          </svg>
+          Message on WhatsApp
+        </a>
+
+        <a class="btn ghost" href="mailto:kobrosli44@gmail.com" aria-label="Email Fady">
+          Email Me
+        </a>
+      </div>
+
+      <div class="contact-card" role="region" aria-label="Contact details">
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 8v8a4 4 0 01-4 4H7l-4 2V6a4 4 0 014-4h10a4 4 0 014 4z" fill="rgba(255,255,255,0.06)"/></svg>
+          <div class="contact-text"><strong>WhatsApp:</strong> <a href="https://wa.me/96871119241" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">+968 7111 9241</a></div>
+        </div>
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.99 3.657 9.128 8.438 9.879v-6.99H8.078V12h2.359V9.797c0-2.33 1.388-3.613 3.512-3.613.997 0 2.036.178 2.036.178v2.236h-1.133c-1.116 0-1.463.693-1.463 1.404V12h2.492l-.398 2.889h-2.094v6.99C18.343 21.128 22 16.99 22 12c0-5.523-4.477-10-10-10z" fill="rgba(255,255,255,0.06)"/></svg>
+          <div class="contact-text"><strong>Instagram:</strong> <a href="https://www.instagram.com/manam6208" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">@manam6208</a></div>
+        </div>
+        <div class="contact-row">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 4v16h20V4H2zm10 8L4 6h16l-8 6z" fill="rgba(255,255,255,0.06)"/></svg>
+          <div class="contact-text"><strong>Email:</strong> <a href="mailto:kobrosli44@gmail.com" style="color:var(--accent);text-decoration:none">kobrosli44@gmail.com</a></div>
+        </div>
+      </div>
+
+      <footer>© <span id="year"></span> Fady Al Nahas — Digital Solutions</footer>
+    </section>
+
+    <!-- RIGHT: panel -->
+    <aside class="panel" aria-labelledby="panel-title">
+      <div class="hero-visual">
+        <div class="visual-left">
+          <div class="badge">Smart-Casual • 4K Ready</div>
+          <h2 id="panel-title" style="margin:12px 0 0;font-size:20px;color:#e9fff8">Helping ambitious brands stand out & grow</h2>
+          <p style="margin:10px 0 0;color:#cfeee8">I combine creative brand building with performance marketing to deliver real, measurable growth — from first impression to lasting customers.</p>
+        </div>
+        <div class="visual-right">
+          <div class="mock-card" role="img" aria-label="card preview">
+            <h3>Digital Solutions</h3>
+            <p>Branding • Ads • Content • Funnels</p>
+          </div>
+          <div style="font-size:12px;color:var(--muted)">Fast build • Clear ROI • Simple process</div>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature">
+          <div class="num">1</div>
+          <div class="desc"><strong>Discovery Call</strong> — 20-minute clarification call to map needs & goals.</div>
+        </div>
+
+        <div class="feature">
+          <div class="num">2</div>
+          <div class="desc"><strong>Quick Turnaround</strong> — MVP websites, funnels, or content packs in 48–72 hours.</div>
+        </div>
+
+        <div class="feature">
+          <div class="num">3</div>
+          <div class="desc"><strong>Scale & Automate</strong> — Ads, lead capture, and automation to scale sales reliably.</div>
+        </div>
+      </div>
+
+      <div class="contact-block" style="margin-top:18px">
+        <a class="small-cta" href="https://wa.me/96871119241" target="_blank" rel="noopener">Book a quick WhatsApp chat</a>
+        <a class="small-cta" href="mailto:kobrosli44@gmail.com">Request Pricing</a>
+        <a class="small-cta" href="https://www.instagram.com/manam6208" target="_blank" rel="noopener">View Instagram</a>
+      </div>
+
+      <div style="margin-top:18px;color:var(--muted);font-size:13px">
+        <strong>How it works</strong>
+        <ul style="margin:8px 0 0 18px;color:#bfeee7">
+          <li>Quick brief → Pay 50% deposit (USDT/Airtm) → Fast delivery → Final payment → Handover & support.</li>
+        </ul>
+      </div>
+
+    </aside>
+  </main>
+
+  <script>
+    // insert current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // optional: track clicks (console only)
+    document.querySelectorAll('a[href^="https://wa.me"]').forEach(a=>{
+      a.addEventListener('click', ()=>console.log('WhatsApp clicked'));
+    });
+  </script>
+</body>
+</html>
